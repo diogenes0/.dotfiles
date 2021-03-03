@@ -1,0 +1,24 @@
+# These are custom aliases provided by me. They're mostly there to improve safety and add color!
+
+# These add confirmation before overwriting
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+
+# These add color to the relevant commands
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ip="ip --color=auto"
+alias bat="bat --theme=gruvbox-dark"
+
+# These are some aliases for ls to make getting info easier
+alias la="ls -a"
+alias ll="ls -lah"
+
+# This one make all these aliases available for sudo and doas
+alias doas="doas "
+alias sudo="sudo "
+
+# This helps me track all of my dotfiles
+alias config="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"

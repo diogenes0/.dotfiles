@@ -1,0 +1,6 @@
+# Binds control-arrow keys to go forward and backwards
+bindkey ";5C" forward-word
+bindkey ";5D" backward-word
+
+# Binds control-backspace to delete word
+bindkey '^H' backward-kill-word

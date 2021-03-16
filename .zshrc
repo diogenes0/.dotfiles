@@ -44,5 +44,5 @@ source ~/.zsh_my_aliases
 # these are my custom keybindings
 source ~/.zsh_my_keybindings
 
-# this enable miniconda
+# this enables miniconda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

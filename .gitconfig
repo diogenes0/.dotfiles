@@ -7,3 +7,5 @@
 	email = hosono@stanford.edu
 [init]
 	defaultBranch = main
+[diff]
+	tool = vimdiff

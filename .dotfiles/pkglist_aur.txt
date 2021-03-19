@@ -2,7 +2,6 @@ dropbox
 informant
 konsole-gruvbox
 mailspring
-ttf-ms-win10
 vim-gruvbox-git
 yay
 ytop-bin

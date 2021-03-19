@@ -9,7 +9,7 @@ sudo pacman -S --needed - < $HOME/.dotfiles/pkglist.txt
 # Make yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg --syncdeps 
+makepkg --syncdeps --install
 cd $HOME
 
 # Use yay to install AUR packages

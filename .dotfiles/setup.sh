@@ -14,3 +14,6 @@ cd $HOME
 
 # Use yay to install AUR packages
 yay -S - < $HOME/.dotfiles/pkglist_aur.txt
+
+# We have to read what the informat has to say
+informant read

@@ -1,8 +1,8 @@
 dropbox
-informant
 konsole-gruvbox
 mailspring
 vim-gruvbox-git
 yay
 ytop-bin
 zsh-theme-powerlevel10k-git
+informant

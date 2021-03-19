@@ -7,4 +7,5 @@ konsole
 man-pages
 opendoas
 rsync
+ttf-hack
 zsh

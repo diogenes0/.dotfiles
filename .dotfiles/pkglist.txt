@@ -1,0 +1,10 @@
+archey3
+archlinux-wallpaper
+bat
+firefox
+htop
+konsole
+man-pages
+opendoas
+rsync
+zsh

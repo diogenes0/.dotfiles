@@ -45,4 +45,4 @@ source ~/.zsh_my_aliases
 source ~/.zsh_my_keybindings
 
 # this enables miniconda
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+#[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

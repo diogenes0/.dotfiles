@@ -46,3 +46,7 @@ source ~/.zsh_my_keybindings
 
 # this enables miniconda
 #[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# the adds a local bin directory to PATH
+export PATH="$PATH:$HOME/bin"

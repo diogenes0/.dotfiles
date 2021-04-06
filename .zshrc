@@ -53,3 +53,6 @@ source ~/.zsh_my_keybindings
 
 # the adds a local bin directory to PATH
 export PATH="$PATH:$HOME/bin"
+
+# this helps with CS140E stuff
+export CS140E_2021_PATH=$HOME/Desktop/cs140e-21spr-private

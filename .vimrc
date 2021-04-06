@@ -75,5 +75,8 @@ set wrap
 let skip_defaults_vim=1
 set viminfo=""
 
+" allows writing as root with w!!
+cmap w!! %!sudo tee > /dev/null %
+
 " enable vim-plug
 source ~/.vim/plugins.vim

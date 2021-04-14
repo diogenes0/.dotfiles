@@ -45,11 +45,13 @@ source ~/.zsh_my_aliases
 source ~/.zsh_my_keybindings
 
 # this enables miniconda
-#[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 # the adds a local bin directory to PATH
 export PATH="$PATH:$HOME/bin"
+
+# pip wants to install stuff here
+export PATH="$PATH:$HOME/.local/bin"
 
 # this helps with CS140E stuff
 export CS140E_2021_PATH=$HOME/Desktop/cs140e-21spr-private

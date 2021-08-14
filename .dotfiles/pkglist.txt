@@ -2,6 +2,7 @@ archey3
 archlinux-wallpaper
 bat
 firefox
+fzf
 htop
 konsole
 man-pages

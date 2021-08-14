@@ -20,6 +20,10 @@ Plug 'sheerun/vim-polyglot'
 " Debugger
 Plug 'joonty/vdebug'
 
+" fzf vim integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " end plugins
 call plug#end()
 

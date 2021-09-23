@@ -24,6 +24,12 @@ Plug 'joonty/vdebug'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" autoclose parens and quotes
+Plug 'townk/vim-autoclose'
+
+" autoclose html tags
+Plug 'alvan/vim-closetag'
+
 " end plugins
 call plug#end()
 

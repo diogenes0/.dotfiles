@@ -79,5 +79,8 @@ set viminfo=""
 " allows writing as root with w!!
 cmap w!! %!sudo tee > /dev/null %
 
+" needed for polygot. But maybe redundant with sensible?
+set nocompatible
+
 " enable vim-plug
 source ~/.vim/plugins.vim

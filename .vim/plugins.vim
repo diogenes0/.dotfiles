@@ -1,34 +1,55 @@
 " enable vim-plug
 call plug#begin('~/.vim/plugged')
 
-" Fugitive. A git wrapper
-Plug 'tpope/vim-fugitive'
-
 " Automatic completion
 Plug 'valloric/youcompleteme'
 
 " Sensible defaults
 Plug 'tpope/vim-sensible'
 
-" Python highlighting
-Plug 'hdima/python-syntax'
-let python_highlight_all=1
-
 " Tons of syntax highlighting
+" get all langs highlighted?
 Plug 'sheerun/vim-polyglot'
-
-" Debugger
-Plug 'joonty/vdebug'
-
-" fzf vim integration
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+let g:python_highlight_all = 1
 
 " autoclose parens and quotes
-Plug 'townk/vim-autoclose'
+" TODO turn off for html files
+" TODO find better matcher
+Plug 'Raimondi/delimitMate'
 
 " autoclose html tags
 Plug 'alvan/vim-closetag'
+
+" Nice status bar. TODO figure out what it does
+Plug 'vim-airline/vim-airline'
+
+" Show which lines will have git diffs in the sidebar
+" Plug 'airblade/vim-gitgutter'
+" set updatetime=100
+
+" Be able to show a file tree
+" TODO on by default?
+Plug 'preservim/nerdtree'
+
+" Show git status in nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Show nice icons in nerdtree
+Plug 'ryanoasis/vim-devicons'
+
+" Highlight files in nerdtree
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Nice commenting things
+Plug 'preservim/nerdcommenter'
+
+" Nifty things for delimaters
+Plug 'tpope/vim-surround'
+
+" Git wrapper
+" TODO decide if this should be a thing in vim?
+" Plug 'tpope/vim-fugitive'
+
 
 " end plugins
 call plug#end()

@@ -1,6 +1,9 @@
 " enable vim-plug
 call plug#begin('~/.vim/plugged')
 
+" gruvbox colorscheme
+Plug 'morhetz/gruvbox'
+
 " Fugitive. A git wrapper
 Plug 'tpope/vim-fugitive'
 
@@ -25,10 +28,15 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " autoclose parens and quotes
-Plug 'townk/vim-autoclose'
+Plug 'Raimondi/delimitMate'
 
 " autoclose html tags
 Plug 'alvan/vim-closetag'
+
+" Vim wiki
+Plug 'vimwiki/vimwiki'
+set nocompatible
+filetype plugin on
 
 " end plugins
 call plug#end()

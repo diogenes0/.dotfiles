@@ -1,8 +1,3 @@
-" gruvbox configuration
-let g:gruvbox_italic = 1
-colorscheme gruvbox
-set bg=dark
-
 " enables syntax highlighting
 syntax on
 
@@ -81,3 +76,12 @@ cmap w!! %!sudo tee > /dev/null %
 
 " enable vim-plug
 source ~/.vim/plugins.vim
+
+" gruvbox configuration
+let g:gruvbox_italic = 1
+colorscheme gruvbox
+set bg=dark
+
+" turn on spell checking
+set spell spelllang=en_us
+hi SpellBad cterm=underline

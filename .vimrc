@@ -1,8 +1,3 @@
-" gruvbox configuration
-let g:gruvbox_italic = 1
-colorscheme gruvbox
-set bg=dark
-
 " enables syntax highlighting
 syntax on
 
@@ -84,3 +79,8 @@ set nocompatible
 
 " enable vim-plug
 source ~/.vim/plugins.vim
+
+" gruvbox configuration
+let g:gruvbox_italic = 1
+colorscheme gruvbox
+set bg=dark

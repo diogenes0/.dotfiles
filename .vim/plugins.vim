@@ -1,6 +1,9 @@
 " enable vim-plug
 call plug#begin('~/.vim/plugged')
 
+" Gruvbox theme
+Plug 'morhetz/gruvbox'
+
 " Automatic completion
 Plug 'valloric/youcompleteme'
 

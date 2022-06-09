@@ -60,5 +60,12 @@ export PATH="$PATH:$HOME/bin"
 # pip wants to install stuff here
 export PATH="$PATH:$HOME/.local/bin"
 
-# this helps with CS140E stuff
-export CS140E_2021_PATH=$HOME/Desktop/cs140e-21spr-private
+# this helps with CS 240LX stuff
+export CS240LX_2022_PATH=$HOME/Desktop/cs240lx
+export PATH="$PATH:$CS240LX_2022_PATH/bin"
+
+# Adds cargo stuff to PATH
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# Adds color to man pages
+export MANPAGER="less -R --use-color -Dd+g -Du+b"

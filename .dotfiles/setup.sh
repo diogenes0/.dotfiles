@@ -7,13 +7,13 @@ cd $HOME
 sudo pacman -S --needed - < $HOME/.dotfiles/pkglist.txt
 
 # Make yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg --syncdeps --install
 cd $HOME
 
 # Use yay to install AUR packages
-yay -S - < $HOME/.dotfiles/pkglist_aur.txt
+paru -S - < $HOME/.dotfiles/pkglist_aur.txt
 
 # We have to read what the informat has to say
 informant read

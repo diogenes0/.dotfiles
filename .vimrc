@@ -84,3 +84,7 @@ source ~/.vim/plugins.vim
 let g:gruvbox_italic = 1
 colorscheme gruvbox
 set bg=dark
+
+" turn on spell checking
+set spell spelllang=en_us
+hi SpellBad cterm=underline

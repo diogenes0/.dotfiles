@@ -2,8 +2,8 @@ dropbox
 konsole-gruvbox
 mailspring
 nerd-fonts-complete
-vim-gruvbox-git
-yay
+paru
+vim-plug
 ytop-bin
 zsh-theme-powerlevel10k-git
 informant

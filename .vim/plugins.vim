@@ -16,12 +16,15 @@ Plug 'sheerun/vim-polyglot'
 let g:python_highlight_all = 1
 
 " autoclose parens and quotes
-" TODO turn off for html files
-" TODO find better matcher
 Plug 'Raimondi/delimitMate'
 
 " autoclose html tags
 Plug 'alvan/vim-closetag'
+
+" Vim wiki
+Plug 'vimwiki/vimwiki'
+set nocompatible
+filetype plugin on
 
 " Nice status bar. TODO figure out what it does
 Plug 'vim-airline/vim-airline'
@@ -53,7 +56,5 @@ Plug 'tpope/vim-surround'
 " TODO decide if this should be a thing in vim?
 " Plug 'tpope/vim-fugitive'
 
-
 " end plugins
 call plug#end()
-

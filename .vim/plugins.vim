@@ -6,6 +6,9 @@ Plug 'morhetz/gruvbox'
 
 " Automatic completion
 Plug 'valloric/youcompleteme'
+autocmd ColorScheme *
+	\ hi link YcmErrorLine GruvboxRedSign |
+	\ hi YcmErrorSection cterm=reverse,bold gui=reverse
 
 " Sensible defaults
 Plug 'tpope/vim-sensible'
@@ -30,8 +33,9 @@ filetype plugin on
 Plug 'vim-airline/vim-airline'
 
 " Show which lines will have git diffs in the sidebar
-" Plug 'airblade/vim-gitgutter'
-" set updatetime=100
+"Plug 'airblade/vim-gitgutter'
+"set updatetime=100
+"let g:gitgutter_highlight_lines = 0
 
 " Be able to show a file tree
 " TODO on by default?

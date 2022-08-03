@@ -96,7 +96,7 @@ autocmd TerminalOpen * setlocal spell spelllang=
 " open Nerd Tree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * {
-	if match(bufname("%"), ".*COMMIT_EDITMSG")
+	if match(bufname("%"), ".*COMMIT_EDITMSG") == -1
 		NERDTree
 		if argc() > 0 || exists("s:std_in")
 			wincmd p

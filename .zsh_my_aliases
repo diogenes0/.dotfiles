@@ -5,8 +5,11 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
+# Replace ls with exa
+alias ls="exa --icons --classify --across"
+
 # These add color to the relevant commands
-alias ls="ls --color=auto"
+# alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ip="ip --color=auto"
@@ -14,7 +17,8 @@ alias bat="bat --theme=gruvbox-dark"
 
 # These are some aliases for ls to make getting info easier
 alias la="ls -a"
-alias ll="ls -lah"
+alias ll="ls --long --header --changed --group --git"
+alias lt="ll --tree"
 
 # This one make all these aliases available for sudo and doas
 alias doas="doas "

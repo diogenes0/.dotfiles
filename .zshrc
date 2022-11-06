@@ -1,12 +1,6 @@
 # set vim as the default editor
 export EDITOR=vim
 
-# Display some flashy information with archey3
-# The escape codes prevent line wrapping
-echo -ne '\e[?7l'
-/usr/bin/archey3 
-echo -ne '\e[?7h'
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.

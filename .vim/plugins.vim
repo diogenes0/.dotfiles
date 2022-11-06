@@ -31,6 +31,8 @@ filetype plugin on
 
 " Nice status bar. TODO figure out what it does
 Plug 'vim-airline/vim-airline'
+" see https://github.com/vim-airline/vim-airline/issues/393#issuecomment-177191552
+set t_RV=
 
 " Show which lines will have git diffs in the sidebar
 "Plug 'airblade/vim-gitgutter'
@@ -51,6 +53,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Nice commenting things
+filetype plugin on
 Plug 'preservim/nerdcommenter'
 
 " Nifty things for delimaters

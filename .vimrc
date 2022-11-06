@@ -1,6 +1,9 @@
 " enables syntax highlighting
 syntax on
 
+" kitty needs this to prevent black screens
+let &t_ut=''
+
 " sets 256 terminal colors
 set t_Co=256
 
@@ -22,6 +25,9 @@ set wildmenu
 
 " enables the ruler to help with navigation
 set ruler
+
+" set comma as leader
+let mapleader = ","
 
 " sets backspace to act correctly
 set backspace=eol,start,indent

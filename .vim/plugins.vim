@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 
 " Automatic completion
-Plug 'valloric/youcompleteme'
+Plug 'ycm-core/youcompleteme'
 autocmd ColorScheme *
 	\ hi link YcmErrorLine GruvboxRedSign |
 	\ hi YcmErrorSection cterm=reverse,bold gui=reverse

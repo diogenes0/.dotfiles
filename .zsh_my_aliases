@@ -26,3 +26,9 @@ alias sudo="sudo "
 
 # This helps me track all of my dotfiles
 alias config="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# This clears the screen and scrollback history
+alias clearall="printf '\033[2J\033[3J\033[1;1H'"
+
+# set TERM environment variable for ssh
+alias ssh="TERM=xterm-256color ssh"

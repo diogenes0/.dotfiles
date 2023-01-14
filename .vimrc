@@ -60,7 +60,7 @@ set nobackup
 set noswapfile
 
 " use tabs not spaces
-set noexpandtab
+set expandtab
 
 " sets tabs to 4 spaces
 set shiftwidth=4

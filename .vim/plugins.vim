@@ -5,10 +5,22 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 
 " Automatic completion
-Plug 'ycm-core/youcompleteme'
+Plug 'ycm-core/YouCompleteMe'
 autocmd ColorScheme *
 	\ hi link YcmErrorLine GruvboxRedSign |
 	\ hi YcmErrorSection cterm=reverse,bold gui=reverse
+
+" YCM docs on hover show sooner
+set updatetime=2000
+
+" YCM docs on hover have syntax highlighting
+let b:ycm_hover = {
+    \ 'command': 'GetDoc',
+    \ 'syntax': &filetype
+    \ }
+
+" YCM docs close after completion
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Sensible defaults
 Plug 'tpope/vim-sensible'

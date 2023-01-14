@@ -1,6 +1,6 @@
 configuration {
     modes: "combi,window,drun,run,ssh";
-    font: "Meslo Nerd Font 24";
+    font: "Meslo Nerd Font 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/

@@ -4,6 +4,11 @@ call plug#begin('~/.vim/plugged')
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
+" Tons of syntax highlighting
+" get all langs highlighted?
+Plug 'sheerun/vim-polyglot'
+let g:python_highlight_all = 1
+
 " Automatic completion
 Plug 'ycm-core/YouCompleteMe'
 autocmd ColorScheme *
@@ -22,13 +27,17 @@ let b:ycm_hover = {
 " YCM docs close after completion
 let g:ycm_autoclose_preview_window_after_completion = 1
 
+" Let clangd fully control code completion
+let g:ycm_clangd_uses_ycmd_caching = 0
+" Use installed clangd, not YCM-bundled clangd which doesn't get updates.
+let g:ycm_clangd_binary_path = exepath("clangd")
+
+" Linter
+"Plug 'dense-analysis/ale'
+"let g:airline#extensions#ale#enabled = 1
+
 " Sensible defaults
 Plug 'tpope/vim-sensible'
-
-" Tons of syntax highlighting
-" get all langs highlighted?
-Plug 'sheerun/vim-polyglot'
-let g:python_highlight_all = 1
 
 " autoclose parens and quotes
 Plug 'Raimondi/delimitMate'

@@ -33,8 +33,11 @@ let g:ycm_clangd_uses_ycmd_caching = 0
 let g:ycm_clangd_binary_path = exepath("clangd")
 
 " Linter
-"Plug 'dense-analysis/ale'
-"let g:airline#extensions#ale#enabled = 1
+Plug 'dense-analysis/ale'
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 " Sensible defaults
 Plug 'tpope/vim-sensible'
@@ -56,7 +59,7 @@ Plug 'vim-airline/vim-airline'
 set t_RV=
 
 " Show which lines will have git diffs in the sidebar
-"Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 "set updatetime=100
 "let g:gitgutter_highlight_lines = 0
 

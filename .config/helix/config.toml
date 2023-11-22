@@ -1,0 +1,16 @@
+theme = "gruvbox"
+
+[editor.file-picker]
+hidden = false
+
+[editor]
+color-modes = true
+soft-wrap.enable = true
+auto-format = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+select = "underline"

@@ -50,6 +50,8 @@ source ~/.zsh_my_aliases
 # these are my custom keybindings
 source ~/.zsh_my_keybindings
 
+source ~/.export-esp.sh
+
 # this enables miniconda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
@@ -67,4 +69,6 @@ export PATH="$PATH:$CS240LX_2022_PATH/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # Adds color to man pages
-export MANPAGER="less -R --use-color -Dd+g -Du+b"
+# export MANPAGER="less -R --use-color -Dd+g -Du+b"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"

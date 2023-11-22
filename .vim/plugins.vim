@@ -14,6 +14,14 @@ Plug 'ycm-core/YouCompleteMe'
 autocmd ColorScheme *
 	\ hi link YcmErrorLine GruvboxRedSign |
 	\ hi YcmErrorSection cterm=reverse,bold gui=reverse
+let g:ycm_language_server = 
+  \ [ 
+  \   {
+  \     'name': 'md',
+  \     'cmdline': [ '/usr/bin/ltex-ls', '--log-file=/tmp/ltex-ls-${PID}.log' ],
+  \     'filetypes': [ 'md', 'vimwiki' ]
+  \   }
+  \ ]
 
 " YCM docs on hover show sooner
 set updatetime=2000

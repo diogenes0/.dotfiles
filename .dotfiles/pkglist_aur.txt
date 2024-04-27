@@ -1,9 +1,4 @@
-dropbox
-konsole-gruvbox
-mailspring
-nerd-fonts-complete
-paru
-vim-plug
-ytop-bin
-zsh-theme-powerlevel10k-git
+doas-sudo-shim-minimal
 informant
+kitty-gruvbox-theme-git
+usrbinhx

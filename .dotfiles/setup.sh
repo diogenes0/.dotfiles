@@ -1,18 +1,13 @@
 #! /bin/bash
 
-# Do everything from home
-cd $HOME
-
 # Install packages
 sudo pacman -S --needed - < $HOME/.dotfiles/pkglist.txt
 
-# Make yay
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg --syncdeps --install
-cd $HOME
+# Install paru
+git clone https://aur.archlinux.org/paru-bin.git $HOME/paru-bin
+makepkg --syncdeps --install -p $HOME/paru-bin/PKGBUILD
 
-# Use yay to install AUR packages
+# Use paru to install AUR packages
 paru -S - < $HOME/.dotfiles/pkglist_aur.txt
 
 # We have to read what the informat has to say

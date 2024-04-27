@@ -1,9 +1,9 @@
-[[language]]
-name = "rust"
+[language-server.ltex-ls]
+command = "/usr/bin/ltex-ls"
 
 [[language]]
 name = "markdown"
-language-servers = ["/usr/bin/ltex-ls"]
+language-servers = ["ltex-ls"]
 file-types = ["md", "txt"]
 scope = "source.markdown"
 roots = []

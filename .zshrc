@@ -68,6 +68,9 @@ export PATH="$PATH:$CS240LX_2022_PATH/bin"
 # Adds cargo stuff to PATH
 export PATH="$PATH:$HOME/.cargo/bin"
 
+# Adds Haskell stuff to PATH
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
 # Adds color to man pages
 # export MANPAGER="less -R --use-color -Dd+g -Du+b"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

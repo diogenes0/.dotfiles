@@ -3,6 +3,7 @@ archlinux-wallpaper
 bat
 firefox
 fzf
+git-delta
 htop
 konsole
 man-pages

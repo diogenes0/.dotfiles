@@ -201,9 +201,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY
+exec --no-startup-id dbus-update-activation-environment DISPLAY XAUTHORITY
 exec feh --bg-scale /usr/share/backgrounds/archlinux/awesome.png
-
-#exec --no-startup-id picom --daemonize
+exec --no-startup-id dunst --startup_notification
 
 bar {
         mode invisible

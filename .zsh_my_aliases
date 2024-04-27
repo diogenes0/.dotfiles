@@ -3,7 +3,7 @@
 # These add confirmation before overwriting
 alias cp="cp -i"
 alias mv="mv -i"
-alias rm="rm -i"
+alias rm="trash"
 
 # Replace ls with exa
 alias ls="exa --icons --classify --across"

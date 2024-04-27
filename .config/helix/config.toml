@@ -6,7 +6,6 @@ hidden = false
 [editor]
 color-modes = true
 soft-wrap.enable = true
-auto-format = false
 
 [editor.lsp]
 display-messages = true

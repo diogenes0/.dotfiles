@@ -1,0 +1,3 @@
+[global]
+icon_theme = Tela-dark
+enable_recursive_icon_lookup = true

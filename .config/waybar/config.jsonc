@@ -1,0 +1,262 @@
+{
+    "position": "top",
+
+    "modules-left": [
+        "sway/workspaces",
+        "hyprland/workspaces",
+        "custom/arrow-right#workspaces",
+        "hyprland/window",
+        "sway/mode",
+        "sway/window",
+    ],
+    "modules-center": [
+        "sway/scratchpad",
+        "custom/arrow-left#day",
+        "clock#day",
+        "custom/arrow-left#time",
+        "clock#time",
+        "custom/arrow-right#time",
+        "clock#date",
+        "custom/arrow-right#date",
+        "privacy",
+    ],
+    "modules-right": [
+        "tray",
+        "custom/arrow-left#backlight",
+        "backlight",
+        "custom/arrow-left#network",
+        "network",
+        "custom/arrow-left#audio",
+        "pulseaudio",
+        "custom/arrow-left#battery",
+        "battery",
+    ],
+
+    "fixed-center": true,
+
+
+//      MODULES CONFIGURATION
+//      ---------------------
+
+
+//-----	LEFT MODULES: -----
+
+    "hyprland/workspaces": {
+      "format": "{name}"
+    },
+
+    "sway/workspaces": {
+        "format": "{index}",
+        "disable-scroll": true,
+    },
+
+    "sway/mode": {
+        "format": "{}:",
+        "tooltip": false,
+    },
+
+    "sway/window": {
+        "format": {},
+        "max-length": 45,
+        "tooltip": false,
+        "rewrite": {
+            "(.*) - Ablaze Floorp": "$1",
+        }
+    },
+
+
+//-----	CENTER MODULES: -----
+
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": true,
+        "format-icons": ["󰙏", "󰙏"],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+    "clock#day": {
+        "format": "{:%A}",
+        "tooltip-format": "Week: {:%V}",
+    },
+
+    "clock#time": {
+        "format": "{:%OI:%M %p}",
+        "tooltip-format": "<big>{:%Z %z}</big>",
+    },
+
+    "clock#date": {
+        "format": "{:%Y-%m-%d}",
+        "tooltip-format": "<big>{calendar}</big>",
+    },
+
+    "privacy": {
+        "icon-spacing": 8,
+        "icon-size": 15,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+            }
+        ]
+    },
+
+//-----	RIGHT MODULES: -----
+
+    "tray": {
+        "spacing": 8
+    },
+
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": [
+            "", // nf-weather-moon_new
+            "", // nf-weather-moon_alt_waxing_gibbous_6
+            "", // ..
+            "",
+            "",
+            "",
+            "", // nf-weather-moon_alt_waxing_gibbous_1
+            "", // nf-weather-moon_alt_first_quarter
+            "", // nf-weather-moon_alt_waxing_crescent_6
+            "", // ..
+            "",
+            "",
+            "",
+            "", // nf-weather-moon_alt_waxing_crescent_1
+            ""  // nf-weather-moon_full
+        ],
+        "tooltip-format": "{percent}%",
+    },
+
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
+        "format-disabled": "⚠",
+        "format-disconnected": "󰤮",
+        "tooltip-format": "{ipaddr}",
+        "tooltip-format-wifi": "{ipaddr} via {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "Not connected",
+        "tooltip-format-disabled": "Not enabled",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "on-click-middle": "hostname -i | wl-copy -on",
+    },
+
+    "pulseaudio": {
+        "on-scroll-up": "",
+        "format": "{icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰖁 {icon} {format_source}",
+        "format-muted": "󰖁",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "muted": "󰖁",
+            "headphone": "",
+            "hands-free": "󱡏",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip-format": "{volume}%",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    },
+
+    "battery": {
+        "format-full": "󰁹",
+        "tooltip-format-full": "Full",
+        "interval": 1,
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+        ],
+        "format": "{icon}",
+        "tooltip-format-discharging": "Time to empty: {time}\nCurrently at: {capacity}%",
+
+        "states": {
+            "below10": 10,
+            "below20": 20,
+            "below30": 30,
+            "below40": 40,
+            "below50": 50,
+            "below60": 60,
+            "below70": 70,
+            "below80": 80,
+            "below90": 90,
+            "below100": 100,
+        },
+        "format-charging-below10": "󰢟",
+        "format-charging-below20": "󰢜",
+        "format-charging-below30": "󰂆",
+        "format-charging-below40": "󰂇",
+        "format-charging-below50": "󰂈",
+        "format-charging-below60": "󰢝",
+        "format-charging-below70": "󰂉",
+        "format-charging-below80": "󰢞",
+        "format-charging-below90": "󰂊",
+        "format-charging-below100": "󰂋",
+        "tooltip-format-charging": "Time to full: {time}\nCurrently at: {capacity}%",
+    },
+
+
+//	ARROWS
+//	------
+
+    "custom/arrow-right#workspaces": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-right#time": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-right#date": {
+        "format": "",
+        "tooltip": false,
+    },
+
+    "custom/arrow-left#day": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-left#time": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-left#backlight": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-left#network": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-left#audio": {
+        "format": "",
+        "tooltip": false,
+    },
+    "custom/arrow-left#battery": {
+        "format": "",
+        "tooltip": false,
+    },
+}

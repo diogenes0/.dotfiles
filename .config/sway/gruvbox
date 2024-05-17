@@ -1,0 +1,41 @@
+# black  (bg3/bg4)
+set $bg0        "#282828"
+set $bg1        "#3c3836"
+set $bg2        "#504945"
+set $bg3        "#665c54"
+set $bg4        "#7c6f64"
+
+# red
+set $red1       "#cc241d"
+set $red2       "#fb4934"
+
+# green
+set $green1     "#98971a"
+set $green2     "#b8bb26"
+
+# yellow
+set $yellow1    "#d79921"
+set $yellow2    "#fabd2f"
+
+# blue
+set $blue1      "#458588"
+set $blue2      "#83a598"
+
+# purple
+set $purple1    "#b16286"
+set $purple2    "#d3869b"
+
+# aqua
+set $aqua1      "#689d6a"
+set $aqua2      "#8ec07c"
+
+# gray
+set $gray1      "#a89984"
+set $gray2      "#928374"
+
+# white (fg4/fg3)
+set $fg0        "#fbf1c7"
+set $fg1        "#ebdbb2"
+set $fg2        "#d5c4a1"
+set $fg3        "#bdae93"
+set $fg4        "#a89984"

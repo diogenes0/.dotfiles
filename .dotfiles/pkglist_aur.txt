@@ -1,4 +1,4 @@
 doas-sudo-shim-minimal
-informant
 kitty-gruvbox-theme-git
 usrbinhx
+informant

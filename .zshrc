@@ -40,38 +40,11 @@ bindkey '^[[1;5C' forward-word
 # [Ctrl-LeftArrow] - move backward one word
 bindkey '^[[1;5D' backward-word
 
-# This enables fzf completions and shortcuts
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+# set environment variables
+source ~/.zsh_env
 
 # these are my custom aliases
 source ~/.zsh_my_aliases
 
 # these are my custom keybindings
 source ~/.zsh_my_keybindings
-
-source ~/.export-esp.sh
-
-# this enables miniconda
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
-# the adds a local bin directory to PATH
-export PATH="$PATH:$HOME/bin"
-
-# pip wants to install stuff here
-export PATH="$PATH:$HOME/.local/bin"
-
-# this helps with CS 240LX stuff
-export CS240LX_2022_PATH=$HOME/Desktop/cs240lx
-export PATH="$PATH:$CS240LX_2022_PATH/bin"
-
-# Adds cargo stuff to PATH
-export PATH="$PATH:$HOME/.cargo/bin"
-
-# Adds Haskell stuff to PATH
-export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
-
-# Adds color to man pages
-# export MANPAGER="less -R --use-color -Dd+g -Du+b"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANROFFOPT="-c"

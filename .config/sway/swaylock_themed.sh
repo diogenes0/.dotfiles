@@ -51,7 +51,7 @@ echo $bg0_with_alpha
 
 swaylock \
   --daemonize \
-  --image ~/3840x2160-dark-archlinux.png \
+  --image ~/backgrounds/3840x2160-dark-archlinux.png \
   --show-keyboard-layout \
   --show-failed-attempts \
   --font "MesloLGL Nerd Font" \

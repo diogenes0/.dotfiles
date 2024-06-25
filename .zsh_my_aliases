@@ -17,7 +17,7 @@ alias bat="bat --theme=gruvbox-dark"
 
 # These are some aliases for ls to make getting info easier
 alias la="ls -a"
-alias ll="ls --long --all --header --changed --group --git"
+alias ll="ls --long --all --header --changed --group"
 alias lt="ll --tree"
 
 # This one make all these aliases available for sudo and doas

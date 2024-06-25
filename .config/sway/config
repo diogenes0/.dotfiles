@@ -105,10 +105,11 @@ exec swayidle -w \
 #   }
 # Remap capslock to escape
 input "type:keyboard" {
-    xkb_options caps:swapescape
+    xkb_options caps:escape_shifted_capslock
 }
 
 input "type:touchpad" {
+    click_method clickfinger
 }
 
 #
